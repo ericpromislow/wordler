@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'pp'
+require 'set'
+
+filename = ARGV[0]
+existingLetters = Set.new((ARGV[1] || '').split(''))
+
+words = IO.read(filename).split("\n")
+letters = Hash.new(0)
+words.each do |word|
+  Set.new(word.split('')).difference(existingLetters).entries.each {
+    |c| letters[c] += 1
+  }
+end
+
+pp letters.sort{|v1, v2| v2[1] <=> v1[1]}

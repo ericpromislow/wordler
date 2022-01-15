@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+require 'set'
+
+ARGF.each do |word|
+  puts word if Set.new(word.split('')).entries.length === word.length
+end
