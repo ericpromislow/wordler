@@ -96,7 +96,7 @@ See why I'm leaving that `cat` thing at the start of the line?
 So Wordle would say something like this:
 
 ```
-A   L  T  E  R
+A  L  T  E  R
 🟨 ⬛ ⬛ ⬛ ⬛
 ```
 
@@ -166,9 +166,9 @@ snuck
 The word `snuck` appears twice because that's the one `gshuf` picked for us. With this word, wordle would now read like:
 
 ```
-A   L  T  E  R
+A  L  T  E R
 🟨 ⬛ ⬛ ⬛ ⬛
-S   N  U  C  K
+S  N  U  C K
 🟨 🟨 ⬛ ⬛ ⬛
 ```
 
@@ -199,31 +199,31 @@ biome
 OK, let's try guess # 3:
 
 ```
-A   L  T  E  R
+A  L  T  E  R
 🟨 ⬛ ⬛ ⬛ ⬛
-S   N  U  C  K
+S  N  U  C  K
 🟨 🟨 ⬛ ⬛ ⬛
-B   I  O  M  E
+B  I  O  M  E
 ⬛ ⬛ 🟨 🟨 ⬛
 ```
 
 Only one of those three words (`basin`, `mason`, and `pansy`) have an `m`. Let's try it:
 
 ```
-A   L  T  E  R 
+A  L  T  E  R 
 🟨 ⬛ ⬛ ⬛ ⬛
-S   N  U  C  K
+S  N  U  C  K
 🟨 🟨 ⬛ ⬛ ⬛
-B   I  O  M  E
+B  I  O  M  E
 ⬛ ⬛ 🟨 🟨 ⬛
-M   A  S  O  N
+M  A  S  O  N
 🟩 🟩 🟩 🟩 🟩
 ```
 
 I actually lied earlier on. The secret word I picked at random was actually `tower`, but look what happens here:
 
 ```
-A   L  T  E  R 
+A  L  T  E  R 
 ⬛ ⬛ 🟨 🟩 🟩
 
 $ cat data/words.txt | grep -v -e '[al]' | grep '..[^t]er' | grep t
@@ -254,9 +254,9 @@ opium
 
 So guess #2 would be:
 ```
-A   L  T  E  R
+A  L  T  E  R
 ⬛ ⬛ 🟨 🟩 🟩
-O   P  I  U  M
+O  P  I  U  M
 🟨 ⬛ ⬛ ⬛ ⬛
 ```
 
@@ -269,11 +269,11 @@ tower
 Plugging it in gives:
 
 ```
-A   L  T  E  R
+A  L  T  E  R
 ⬛ ⬛ 🟨 🟩 🟩
-O   P  I  U  M
+O  P  I  U  M
 🟨 ⬛ ⬛ ⬛ ⬛
-T   O  W  E  R
+T  O  W  E  R
 🟩 🟩 🟩 🟩 🟩
 
 ```
