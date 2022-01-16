@@ -82,7 +82,7 @@ alter
 later
 ```
 
-Only two vowels, but those are all frequently used letters, so why not. Before I wrote this program I used to start with the word `raise`, but it turns out that when you don't include regular plurals, `s` drops in the rank of most used letters. Until Wordle starts including the plural form of all regular nouns that end in a consonant, I'll keep starting with one of these words. In fact while this example uses `alter`, I think `later` is a better first guess, because about 25% of the words end in either `e?` or `r` (or both).
+Only two vowels, but those are all frequently used letters, so why not. Before I wrote this program I used to start with the word `raise`, but it turns out that when you don't include regular plurals, `s` drops in the rank of most used letters. Until Wordle starts including the plural form of all regular nouns that end in a consonant, I'll keep starting with one of these words. In fact while this example uses `alter`, I think `later` is a better first guess, because about 25% of the words end in either `e?` or `r` (or both). And over twice as many words have an `a` in position 2 compared to position 1.
 
 Now just for a moment, let's pretend we're the WordleMaster, and we have to pick the word of the day:
 
