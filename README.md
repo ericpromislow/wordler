@@ -56,8 +56,7 @@ terra
 treat
 ```
 
-Either you know what `grep` does, or your collaborator does. If you're following option 3 above, don't worry too much about the actual syntax. Let's just say that `-V` and `[^...]` request match-failures, and everything else is looking for matches.
-Let's now rerun the program:
+Either you know what `grep` does, or your collaborator does. If you're following option 3 above, don't worry too much about the actual syntax. Let's just say that `-V` and `[^...]` request match-failures, and everything else is looking for matches. But that list looks suspect -- I see too many repeated letters in most of the words. Are there any words that contain five different letters? Fortunately, there's yet another program in this repro that files out words with duplicate letters:
 
 ```
 cat data/words.txt | grep -v -e '[^earot]' | ./remove-words-with-duplicates
