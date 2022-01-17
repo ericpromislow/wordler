@@ -282,10 +282,11 @@ T  O  W  E  R
 Here's what I actually do, so I don't have to bother running grep and all that:
 
 1. The first word is always `LATER`. Those are 5 of the 6 most frequent appearances. And it's better than `ALERT` or `ALTER` because the `A` is in a better position, and more words end in `ER`.
-2. If there are no vowels, try `NOISY`, `OPIUM`, or `PIOUS`. The selected consonants from the first word would normally favor one of the these, but we're trying to solve this without running commands.
+2. If there are no vowels, try `NOISY`, `OPIUM`, or `PIOUS`. The selected consonants from the first word would normally favor one of these, but we're trying to solve this without running commands.
 3. If you hit both vowels, `NYMPH`. This is way better than any other word.
-4. If you hit the `E` but not the `A`, `DISCO`. Lots of words end in `IDE` or `ICE`.
-5. If you hit the `A` but not the `E`, `MINUS` works well.
+4. If you hit just one of the vowels and only want to memorize one more word, it's `SCION`.
+5. But if you hit the `E` only and don't think `SCION` will tell you much, `DISCO` is your backup word. Keep in mind that while `N` appears in about 50% more words than `D`, the margin narrows when the word also has an `E`. Bayes at work.
+6. If you hit the `A` but not the `E`, `MINUS` works well. 
 
 At this point much of the time you'll have enough clues to figure out the word on your third guess. If not, this is where running the above `grep` command is helpful to show which words still fit. You're in luck if there's only one. If there are two, it's a coin-flip. If it's three, you can probably pick one of them such that if it's wrong, the clues will pick the one of the other two. With more, you'll need to come up with a word **that's in the word list** that will eliminate as many candidates as possible.
 
