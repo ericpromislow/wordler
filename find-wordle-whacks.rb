@@ -2,11 +2,11 @@
 require 'set'
 factor = 5
 
-words = IO.read('data/words.txt').split("\n")
+words = IO.read('data/words.txt').split("\n") + IO.read('data/full-words.txt')
 
 num_pairs = words.size * (words.size - 1) / 2;
 secs_per_hour = 3600;
-wait_time = (12.0 * secs_per_hour) / num_pairs;
+wait_time = (1200.0 * secs_per_hour) / num_pairs;
 i = 0
 words[0...-1].each_with_index do | word1, index |
   words[index+1..-1].each do |word2|
